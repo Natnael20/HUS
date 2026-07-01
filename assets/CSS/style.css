@@ -12,3 +12,29 @@ body, html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primmary: red;
+    --light: #fff;
+    --dark: #000;
+    --light-blue: #03142a;
+
+}
+
+.navbar {
+    background-color: var(--light-blue);
+}
+
+.navbar-brand {
+    background-color: var(--primmary);
+    height: 15vh;
+    width: 17%;
+}
+
+.nav-item a {
+    color: var(--light);
+    transition: color .5s linear;
+}
+
+.nav-item a:hover {
+    color:var(--primmary);
+}
