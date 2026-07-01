@@ -17,6 +17,7 @@ body, html {
     --light: #fff;
     --dark: #000;
     --light-blue: #03142a;
+    --btn: #e66543;
 
 }
 
@@ -37,4 +38,45 @@ body, html {
 
 .nav-item a:hover {
     color:var(--primmary);
+}
+
+.header-background {
+    background-image: url("https://preview.colorlib.com/theme/hus/img/banner/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.header-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    opacity: .7;
+    z-index: -1;
+}
+
+.header-content {
+    background-color: rgba(0,0,0, .7);
+    height: 100vh;
+    width: 50%;
+    min-width: 250px;
+}
+
+.header-wrapper .btn {
+    border: 1px solid var(--btn);
+    background-color: var(--dark);
+    color: var(--light);
+    transition: background .5s linear;
+}
+
+.header-wrapper .btn:hover {
+    background: var(--btn);
+    color: var(--light) !important;
 }
