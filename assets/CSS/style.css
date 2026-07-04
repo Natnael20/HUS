@@ -26,7 +26,7 @@ body, html {
 }
 
 .navbar-brand {
-    background-color: var(--primmary);
+    background-color: var(--primary);
     height: 15vh;
     width: 17%;
 }
@@ -37,7 +37,7 @@ body, html {
 }
 
 .nav-item a:hover {
-    color:var(--primmary);
+    color:var(--primary);
 }
 
 .header-background {
