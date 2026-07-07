@@ -13,12 +13,11 @@ body, html {
 }
 
 :root {
-    --primary: red;
+    --primary: red; 
     --light: #fff;
     --dark: #000;
     --light-blue: #03142a;
     --btn: #e66543;
-
 }
 
 .navbar {
@@ -187,4 +186,81 @@ p {
     color: var(--primary);
     font-weight: bolder;
     font-size: 1.2rem;
+}
+
+.faculty-container {
+    background: url("https://preview.colorlib.com/theme/hus/img/about/about_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faculty-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.faculty-title {
+    position: relative;
+}
+
+.faculty-title::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 3px;
+    background: var(--btn);
+    margin-top: .9%;
+}
+
+.faculty-info {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.faculty-info > div  > i:hover {
+    color: var(--primary);
+    transition: color .7s linear;
+}
+
+@media (max-width: 767px) {
+    .faculty-container {
+        height: auto;
+        min-height: 100vh;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    .faculty-info > div {
+        width: 90%;
+        margin-left: auto;
+        text-align: center;
+    }
 }

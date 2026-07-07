@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    
+    <!-- Keep only ONE Font Awesome version (latest) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
+    
+    <!-- FIXED: Correct Flaticon CDN -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    
     <title>Hus</title>
 </head>
 <body>
@@ -64,7 +69,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-5">
-                <div class="building text-center  z-1 d-flex justify-content-center align-items-center">
+                <div class="building text-center z-1 d-flex justify-content-center align-items-center">
                     <div class="years">
                         <span>10</span>
                         <p class="fs-5">Years of Experience</p>
@@ -76,7 +81,7 @@
                     <h3>
                         We are Hus 
                         <span class="realEstate">Realestate <br> Company</span>
-                    </h>
+                    </h3>
                 </div>
                 <div class="estate-detail mt-5">
                     <p class="opacity-75 mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi minus fugit blanditiis aliquid nemo ex placeat quae ullam, voluptate a quas sed explicabo quidem quam numquam inventore sapiente aut saepe.</p>
@@ -84,13 +89,10 @@
                 <div class="estate-list">
                     <ul class="list-unstyled fs-6">
                         <li class="mt-5 mb-2">Lorem ipsum dolor sit amet</li>
-                        <li class="mb-2">Consectetur adipisicing elit, sed do
-                        </li>
-                        <li class="mb-2">Eiusmod tempor incididunt ut labore
-                        </li>
-                        <li class="mb-3">Ad minim veniam, quis nostrud.
-                        </li>
-                    </u>
+                        <li class="mb-2">Consectetur adipisicing elit, sed do</li>
+                        <li class="mb-2">Eiusmod tempor incididunt ut labore</li>
+                        <li class="mb-3">Ad minim veniam, quis nostrud.</li>
+                    </ul>
                 </div>
                 <div class="estate-sum d-flex justify-content-evenly align-items-center text-center">
                     <div class="center d-flex gap-3">
@@ -106,7 +108,32 @@
         </div>
     </div>
 
+    <div class="container-fluid faculty-container">
+        <div class="faculty-title">
+            <h3 class="fw-bold text-uppercase text-center text-light z-2">Our Facilities</h3>
+        </div>
+        <div class="row faculty-info">
+            <div class="col-sm-6 col-md-3 mt-4 text-center bg-light shadow p-5 px-2">
+                <!-- FIXED: Using correct Flaticon class -->
+                <i class="fi fi-br-pencil" style="font-size: 48px; margin-bottom: 16px; display: inline-block; line-height: 1;"></i>
+                <h5 class="mt-3">Modern Architecture</h5>
+                <p>Our spaces blend creativity and functionality to meet modern needs.</p>
+          
+            </div>
+  
+            <div class="col-sm-6 col-md-3 mt-4 text-center bg-light shadow p-5 px-3">
+                <!-- Add more facility items here -->
+                <i class="fi fi-br-building" style="font-size: 48px; margin-bottom: 16px; display: inline-block; line-height: 1;"></i>
+                <h5 class="mt-3">Sustainable Design</h5>
+                <p>Eco-friendly buildings designed for a better tomorrow.</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mt-4 text-center bg-light shadow p-5 px-3">
+                <i class="fi fi-br-home" style="font-size: 48px; margin-bottom: 16px; display: inline-block; line-height: 1;"></i>
+                <h5 class="mt-3">Smart Living</h5>
+                <p>Intelligent home solutions for modern living.</p>
+            </div>
+        </div>
+    </div>
 
-    
 </body>
 </html>
